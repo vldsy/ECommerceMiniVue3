@@ -6,7 +6,7 @@ import Cart from './components/Cart.vue'
 <template>
   <div class="min-h-screen flex flex-col items-center justify-center bg-gray-100">
     <h1 class="text-3xl mb-6">eCommerce using Vue 3 Composition API, Vuex and Tailwind</h1>
-    <ProductList />
     <Cart />
+    <ProductList />
   </div>
 </template>
