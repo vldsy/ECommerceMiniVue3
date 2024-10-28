@@ -16,9 +16,9 @@ const addToCart = (product) => {
 
 <template>
     <div>
-        <div class="flex items-start mb-4">
-            <NewProduct class="mr-4 flex-shrink-0" />
-            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="flex flex-col md:flex-row items-start mb-4">
+            <NewProduct class="mr-4 md:mb-0 mb-4" />
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 flex-1">
                 <ProductCard v-for="product in products" :key="product.id" :product="product" @addToCart="addToCart" />
             </div>
         </div>

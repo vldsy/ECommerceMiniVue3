@@ -4,9 +4,12 @@ import Cart from './components/Cart.vue'
 </script>
 
 <template>
-  <div class="min-h-screen flex flex-col items-center justify-center bg-gray-100">
+  <div>
     <h1 class="text-3xl mb-6">eCommerce using Vue 3 Composition API, Vuex and Tailwind</h1>
-    <Cart />
-    <ProductList />
+    <div class="flex flex-col-reverse md:flex-row">
+      <Cart
+        class="w-full md:w-1/4 md:flex md:flex-col md:fixed md:right--2 md:top-0 md:h-full md:bg-white md:shadow-lg md:p-4" />
+      <ProductList class="flex-grow p-4 md:mr-16" />
+    </div>
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-    <div class="border p-4">
+    <div class="p-4 border bg-white w-full md:w-auto">
         <button @click="openModal" class="bg-blue-500 text-white px-4 py-2 rounded mb-4">Add New Product</button>
         <Modal :isOpen="isModalOpen" @close="closeModal">
             <h2 class="text-xl font-semibold mb-2">Add New Product</h2>
